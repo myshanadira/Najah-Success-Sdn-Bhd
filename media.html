@@ -1,0 +1,482 @@
+<html>
+<head>
+<title>
+Najah Success Sdn Bhd
+</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="image/logo.jpg" type="image/x-icon">
+
+<style>
+    * {
+      box-sizing: auto;
+    }
+    
+    /* Center website */
+    .main {
+      max-width: 100%;
+      margin: auto;
+    }
+    
+    div.inset
+    {
+      border-style: inset;
+    }
+    h3 {
+      font-size: 15px;
+      word-break: break-all;
+    }
+    
+    .row {
+      margin: 8px -16px;
+    }
+    
+    /* Add padding BETWEEN each column */
+    .row,
+    .row > .column {
+      padding: 8px;
+    }
+    
+    /* Create four equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 25%;
+    }
+    
+    /* Clear floats after rows */ 
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Content */
+    .content {
+      background-color: white;
+      padding: 10px;
+      font-family: arial;
+      font-size: 14px;
+      text-align: center;
+    }
+    
+    .box-footer{
+    padding:5px 15px;
+    border-top: 1px solid #17191B;
+    text-align:right;
+    font-style:italic;
+    }
+
+    /*Read More*/
+    #more1 {display: none;}
+
+    /*Flip Card*/
+    .flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 250px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    }
+
+    /* Content */
+    .flip-card-content {
+      background-color: rgb(120, 172, 221);
+      padding: 30px;
+      font-family: arial;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    /* This container is needed to position the front and back side */
+    .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    }
+
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    }
+
+    /* Position the front and back side */
+    .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    }
+
+    /* Style the front side (fallback if image is missing) */
+    .flip-card-front {
+    background-color: #bbb;
+    color: black;
+    }
+
+    /* Style the back side */
+    .flip-card-back {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    transform: rotateY(180deg);
+    text-align: center;
+    }
+
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 900px) {
+      .column {
+        width: 50%;
+      }
+    }
+    
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+    </style>
+
+  </head>
+  <body>
+    <div class="menu-bar">
+
+  <ul>
+    <li><img src="image/logo.png" style="width:80px;height:40px;">
+        <div class="sub-menu-1">
+            <ul>
+                <li><a href="index.html">Index</a></li>
+		<li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </div>
+    </li>
+    <li>Organization
+        <div class="sub-menu-1">
+            <ul>
+                <li><a href="objective.html">Objective</a></li>
+                <li><a href="mission.html">Mission & Vision</a></li>
+            </ul>
+        </div>
+    </li>
+    <li><a href="career.html">Career</a></li>
+    <li><a href="media.html">Media</a></li>
+    <li><a href="contact.html">Contact</a>
+        <div class="sub-menu-1">
+            <ul>
+                <li><a href="location.html">Location</a></li>
+            </ul>
+        </div>
+    </li>
+  </ul>
+
+</div>
+
+    <table border=0 width=100% align="center">
+        <tr>
+            <td width=50%>
+            <div class="main">
+
+            <div class="row" >
+                <div class="column">
+                  <div class="content">
+                    <a href="image/Media1.jpg">
+                    <img src="image/Media1.jpg" alt="Hari Raya Aidil Adha" style="width:100%">
+                    </a>
+                    &nbsp;
+                    <h3>Selamat Menyambut Hari Raya Aidil Adha Tulus Ikhlas daripada Kolonel Bersekutu (PA) Dato’ Sri Prof Ahamad Musa So</h3>
+                    <h3>Pengerusi Koperasi Al-Najah KL Berhad</h3>
+                    <br>
+                    <p>“Aidil Adha adalah saat untuk merayakan semangatmu dalam berkorban, <span id="dots">...</span>
+                        <span id="more1">harapanmu pada ampunan, dan keteguhanmu dalam beriman. Selamat Hari Raya Aidil Adha 1441 Hijrah kepada semua staff Koperasi serta Umat Islam.”</span></p>
+                        <br>
+                        <article align="right"> <button onclick="myFunction()" id="myBtn1" >Read more</button> </article>
+                    <br>
+                    <br>
+                    <div class="box-footer">July 30, 2020</div>
+                  </div>
+                </div>
+
+                <div class="column">
+                  <div class="content">
+                    <a href="image/Media2.jpg">
+                    <img src="image/Media2.jpg" alt="Majlis Pemakaian Pangkat" style="width:100%">
+                    </a>
+                    &nbsp;
+                    <h3>Majlis Pemakaian Pangkat</h3>
+                    <h3>dan Penyampaian Watikah Pelantikan </h3>
+                    <h3>Pegawai Bersekutu APM dan Pelancaran CDERT Yayasan FELDA</h3>
+                    <br>
+                    <p>Tahniah diucapkan kepada Kolonel Bersekutu (PA) Dato’ Sri Ahamad Musa So & Dato’ Chen Yoon Wai atas Pelantikan Pegawai Bersekutu APM.</p>
+                    <br>
+                    <br>
+                    <div class="box-footer">July 28, 2020</div>
+                  </div>
+                </div>
+
+                <div class="column">
+                  <div class="content">
+                    <a href="image/Media3.jpg">
+                    <img src="image/Media3.jpg" alt="Majlis Anugerah Pelajar Cemerlang" style="width:100%">
+                    </a>
+                    &nbsp;
+                    <h3>Majlis Anugerah Pelajar Cemerlang</h3>
+                    <h3>UPSR, SPM, STPM dan STAM Parlimen</h3>
+                    <h3>Alor Gajah 2019</h3>
+                    <br>
+                    <p>Terima Kasih Yang Berhormat Dato Seri Mohd Redzuan Yusop (Pak Wan) kerana menjemput Penasihat APM CDERT OHHSEM, Pengerusi Koperasi Al-Najah, Dato Seri Ahamad Musa So bersama Ahli Jawatan Kuasa Dato’ Chen Yoon Wai</p>
+                    <br>
+                    <div class="box-footer">July 28, 2020</div>
+                  </div>
+                </div>
+
+                <div class="column">
+                  <div class="content">
+                    <a href="image/Media4.jpg">
+                    <img src="image/Media4.jpg" alt="System" style="width:100%">
+                    </a>
+                    &nbsp;
+                    <h3>System</h3>
+                    <br>
+                    <p>A system is a group of interacting or interrelated entities that form a unified whole.</p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="box-footer">July 28, 2020</div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <div class="content">
+                      <a href="image/Media5.jpg">
+                      <img src="image/Media5.jpg" alt="Marketing" style="width:100%">
+                      </a>
+                      &nbsp;
+                      <h3>Marketing</h3>
+                      <br>
+                      <p>Marketing is profitably using the results of studying short term and long term needs of those who can pay for a one-time, or service & product placement.</p>
+                      <br>
+                      <div class="box-footer">July 28, 2020</div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="content">
+                      <a href="image/Media6.jpg">
+                      <img src="image/Media6.jpg" alt="Powerpoint PPT" style="width:100%">
+                      </a>
+                      &nbsp;
+                      <h3>Powerpoint PPT / Proposal</h3>
+                      <br>
+                      <p>We will convert your current slides into an interesting design by adding attractive backgrounds and graphics elements into it.</p>
+                      <br>
+                      <br>
+                      <div class="box-footer">July 28, 2020</div>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <div class="content">
+                      <a href="image/Media7.jpg">
+                      <img src="image/Media7.jpg" alt="Trademark Registration" style="width:100%">
+                      </a>
+                      &nbsp;
+                      <h3>Trademark Registration</h3>
+                      <br>
+                      <p>Our Experts Make It Easy For You To Complete Your Trademark Filing By Helping You Every Step Of The Way.</p>
+                      <br>
+                      <br>
+                      <div class="box-footer">July 28, 2020</div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="content">
+                      <a href="image/Media8.jpg">
+                      <img src="image/Media8.jpg" alt="VPS Plan Starter" style="width:100%">
+                      </a>
+                      &nbsp;
+                      <h3>VPS Plan Starter</h3>
+                      <br>
+                      <p>Najah VPS Plan Starter including S, M, and L package</p>
+                      <br>
+                      <br>
+                      <br>
+                      <div class="box-footer">July 28, 2020</div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan=2>
+                <div class="main">
+                <div class="inset">
+
+                <div class="row">
+                    <div class="column">
+                    <div class="flip-card-content">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="image/Media9.png" alt="Avatar" style="width:250px;height:250px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <p>Every business needs mobile app.</p>
+                                <p>Make you idea to available.</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="column">
+                    <div class="flip-card-content">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="image/Media10.png" alt="Avatar" style="width:250px;height:250px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <br>
+                                <br>
+                                <br>
+                                <p><b>DO NOT MISS THE OPPORTUNITY TO GET APPS</b></p>
+                                <br>
+                                <p>This era is all towards the digital world. One of the digital marketing mediums </p>
+                                <p>is Mobile Apps.</p>
+                                <br>
+                                <p>Interested in owning your own business Apps? Need guidance from us?</p>
+                                <p> Let's set our appointment!</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="column">
+                    <div class="flip-card-content">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="image/Media11.jpg" alt="Avatar" style="width:250px;height:250px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <p>Waze was formerly known as FreeMap Israel, a GPS navigation software application owned by Google.</p>
+                                <br>
+                                <p>Interested in making apps like waze? We can help you</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="column">
+                    <div class="flip-card-content">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="image/Media12.png" alt="Avatar" style="width:250px;height:250px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <p>Why do you need to have your own mobile app? Make mobile app difficult, do not know coding / programming?</p>
+                                <br>
+                                <p>We will have a mobile apps build class soon with very affordable fees. Interested ?</p>
+                                <br>
+                                <p>PM us immediately !</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+                <br>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more1");
+          var btnText = document.getElementById("myBtn1");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+    </script>
+
+    <footer class="footer">
+        <section>
+            <div class="col" style="text-align: center;">
+                <h2>SOCIAL MEDIA</h2>
+                <ul>
+                    <li><a href="mailto:admin@alnajah.app">Email</a></li>
+                    <li><a href="https://www.facebook.com/Najahguru">Facebook</a></li>
+                    <li><a href="http://www.wasap.my/+6017-7732212">Whatsapp</a></li>
+                    <li><a href="https://goo.gl/maps/RVkBeGrgNYNKM6do7">Maps</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h2>QUICK LINK</h2>
+                <ul>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="career.html">Career</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="location.html">Contact</a></li>
+                </ul>
+            </div>
+        </section>
+        <footer align="center">
+            <p align>
+                <sub>
+                    Copyright © 2021
+                    <br> Koperasi Al-Najah (K.L) Berhad.
+                    <br> Recommended browser viewed through Chrome 8.7 or higher.
+                    <br> This website is best viewed at screen resolution of 1366 x 768 pixels or higher.
+                    <br> All Rights Reserved.
+                </sub>
+            </p>
+        </footer>
+    </footer>
+  </body>
+</html>

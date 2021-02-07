@@ -1,0 +1,173 @@
+<html>
+<head>
+<title>
+    Najah Success Sdn Bhd
+</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="image/logo.jpg" type="image/x-icon">
+
+<style>
+
+div {margin: 0 auto}
+
+img {
+    /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+      filter: gray; /* IE5+ */
+      -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+      -webkit-transition: all .8s ease-in-out;  
+    }
+
+    img:hover {
+    filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1.01);
+    }
+
+table {
+  width:100%;
+}
+table, td {
+  border: 0px solid black;
+  border-collapse: collapse;
+}
+td {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+
+</head>
+
+<body>
+<div class="menu-bar">
+
+  <ul>
+    <li><img src="image/logo.png" style="width:80px;height:40px;">
+        <div class="sub-menu-1">
+            <ul>
+                <li><a href="index.html">Index</a></li>
+		<li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </div>
+    </li>
+    <li>Organization
+        <div class="sub-menu-1">
+            <ul>
+                <li><a href="objective.html">Objective</a></li>
+                <li><a href="mission.html">Mission & Vision</a></li>
+            </ul>
+        </div>
+    </li>
+    <li><a href="career.html">Career</a></li>
+    <li><a href="media.html">Media</a></li>
+    <li><a href="contact.html">Contact</a>
+        <div class="sub-menu-1">
+            <ul>
+                <li><a href="location.html">Location</a></li>
+            </ul>
+        </div>
+    </li>
+  </ul>
+
+</div>
+
+<br><br>
+
+<table>
+ <tr>
+  <td><div>
+    <img id="myImg" src="image/career1.jpg" alt="Career" style="width:100%;max-width:300px">
+  </div></td>
+  <td><div>
+    <img id="myImg" src="image/career.jpg" alt="Career" style="width:100%;max-width:300px">
+  </div></td>
+  <td><div>
+    <img id="myImg" src="image/career2.jpg" alt="Career" style="width:100%;max-width:300px">
+  </div></td>
+ </tr>
+ <tr>
+  <td><div>
+    <img id="myImg" src="image/career3.jpg" alt="Career" style="width:100%;max-width:300px">
+  <div></td>
+  <td><div>
+    <img id="myImg" src="image/career4.jpg" alt="Career" style="width:100%;max-width:300px">
+  </div></td>
+  <td><div>
+    <img id="myImg" src="image/career5.jpg" alt="Career" style="width:100%;max-width:300px">
+  </div></td>
+ </tr>
+</table>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+<br><br>
+
+<footer class="footer">
+            <section>
+                <div class="col" style="text-align: center;">
+                    <h2>SOCIAL MEDIA</h2>
+                    <ul>
+                        <li><a href="mailto:admin@alnajah.app">Email</a></li>
+                        <li><a href="https://www.facebook.com/Najahguru">Facebook</a></li>
+                        <li><a href="http://www.wasap.my/+6017-7732212">Whatsapp</a></li>
+                        <li><a href="https://goo.gl/maps/RVkBeGrgNYNKM6do7">Maps</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h2>QUICK LINK</h2>
+                    <ul>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="career.html">Career</a></li>
+                        <li><a href="media.html">Media</a></li>
+                        <li><a href="location.html">Contact</a></li>
+                    </ul>
+                </div>
+            </section>
+            <footer align="center">
+                <p align>
+                    <sub>
+                        Copyright © 2021
+                        <br> Koperasi Al-Najah (K.L) Berhad.
+                        <br> Recommended browser viewed through Chrome 8.7 or higher.
+                        <br> This website is best viewed at screen resolution of 1366 x 768 pixels or higher.
+                        <br> All Rights Reserved.
+                    </sub>
+                </p>
+            </footer>
+        </footer>
+
+</body>
+</html>

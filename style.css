@@ -1,0 +1,141 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+body
+{
+    background-image: url(image/backgroundwebsite.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    font-family: arial;
+}
+.menu-bar
+{
+    background: rgb(4, 43, 102);
+    text-align: center;
+}
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.menu-bar ul li
+{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.active, .menu-bar ul li:hover
+{
+    background: rgb(169, 203, 255);
+    border-radius: 3px;
+}
+.menu-bar .fa
+{
+    margin-right: 8px;
+}
+.sub-menu-1
+{ 
+    display: none; 
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background: rgb(4, 43, 102);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{ 
+    border-bottom: none; 
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+    color: rgb(160, 225, 255);
+}
+
+/* footer */
+
+.col { 
+    /* background: rgb(4, 43, 102) */
+    background: rgb(4, 43, 102) ;
+    float: left;
+    text-align: 50%;
+    padding: 36px 30px 30px 50px;
+    width: 50%;
+  }
+   
+  .col:first-child {
+    padding: 36px 30px 30px 50px;
+  }
+   
+  .footer h2 { 
+    text-align: center;
+    background: #17a6b6; 
+    color: #FFF;
+    float: left; 
+    font: bold 18px; 
+    font-variant: small-caps; 
+    margin: 0 0 20px 0; 
+    padding: 2px 0 0 19px; 
+    height: 33px; 
+    width: 310px;
+  }
+   
+  .footer ul { 
+    list-style: none; 
+    margin: auto; 
+    padding: 0; 
+  }
+   
+  .footer li {
+    border-bottom: 1px dashed #25c3ba; 
+    border-top: 1px dashed #25c3ba; 
+    float: left; 
+    height: 35px; 
+    margin: 3px 0;
+    padding: 0; 
+    width: 300px; 
+  }
+   
+  .footer li a { 
+    color: #FFF;
+    display: block;
+    float: left; 
+    font: normal 12px; 
+    padding: 10px 0 0 19px; 
+    text-decoration: none;
+  }
+
+  .footer {
+    background: rgb(4, 43, 102);
+    width: 100%;
+    color: #FFF;
+    text-align: center;
+    font-size: 17px;
+}
